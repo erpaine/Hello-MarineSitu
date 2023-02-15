@@ -9,7 +9,7 @@ npm install
 ```
 3. Enter the following command to start up the app. 
 ```
-npm start
+npm run start
 ```
 4. Navigate to [http://localhost:3000](http://localhost:3000/).
 
