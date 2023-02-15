@@ -15,7 +15,7 @@ function App() {
   const fetchMessage = async () => {
     // Use Fetch API to fetch '/api' endpoint
     const message = await fetch('/api')
-      .then(res => res.text()) // process incoming data
+      .then(res => res.text()) 
 
     // Update welcomeMessage state
     setWelcomeMessage(message)
@@ -26,13 +26,14 @@ function App() {
     fetchMessage()
   }, [])
 
-  // Create async function for fetching users list
+  // Create async function for fetching photo url
   const fetchUsers = async () => {
-    const users = await fetch('/get_photo')
-      .then(res => res.text()) // Process the incoming data
+    //Use Fetch API to fetch '/get_photo' endpoint
+    const imageUrl = await fetch('/get_photo')
+      .then(res => res.text()) 
 
-    // Update usersList state
-    setImageUrl(users)
+    // Update imageUrl state
+    setImageUrl(imageUrl)
   }
   useEffect(() => {
     fetchUsers()
@@ -41,6 +42,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
+        {/*Display MarineSitu Logo*/}
       <img src={imageUrl} alt="logo"/> 
         {/* Display welcome message */}
         <p>{welcomeMessage}</p>
