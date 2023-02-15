@@ -1,6 +1,8 @@
 
 ## Getting Started
+
 1.**Fork** abd **clone** this [repository](https://github.com/erpaine/Hello-MarineSitu) to your machine.
+
 2. Navigate to the project directory and install dependencies.
 ```
 npm install
