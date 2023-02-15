@@ -28,7 +28,7 @@ function App() {
 
   // Create async function for fetching users list
   const fetchUsers = async () => {
-    const users = await fetch('/users/all')
+    const users = await fetch('/get_photo')
       .then(res => res.text()) // Process the incoming data
 
     // Update usersList state

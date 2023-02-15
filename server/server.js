@@ -10,7 +10,7 @@ const cors = require('cors')
 
 // Import routes
 const homeRouter = require('./routes/home-route')
-const usersRouter = require('./routes/users-route')
+const photoRouter = require('./routes/photo-route')
 
 // Setup default port
 const PORT = process.env.PORT || 4000
@@ -40,7 +40,7 @@ app.use('/api', homeRouter)
 // ! Note:
 // '/users' will prefix all post routes
 // with '/users' => '/all' will become '/users/all'
-app.use('/users', usersRouter)
+app.use('/get_photo', photoRouter)
 
 // Implement route for errors
 app.use((err, req, res, next) => {

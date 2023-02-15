@@ -2,7 +2,7 @@
 const express = require('express')
 
 // Import users controller
-const usersController = require('../controllers/users-controller.js')
+const photoController = require('../controllers/photo-controller.js')
 
 // Create express router
 const router = express.Router()
@@ -14,7 +14,7 @@ const router = express.Router()
 // This means that all users routes
 // will be prefixed with /users'
 // i.e.: '/all' will become '/users/all'
-router.get('/all', usersController.usersGetAll)
+router.get('/', photoController.getPhoto)
 
 // Export router
 module.exports = router
