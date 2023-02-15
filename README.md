@@ -1,4 +1,16 @@
 
+## Getting Started
+1.**Fork** abd **clone** this [repository](https://github.com/erpaine/Hello-MarineSitu) to your machine.
+2. Navigate to the project directory and install dependencies.
+```
+npm install
+```
+3. Enter the following command to start up the app. 
+```
+npm start
+```
+4. Navigate to [http://localhost:3000](http://localhost:3000/).
+
 ## Available Scripts
 
 In the project directory, you can run:
